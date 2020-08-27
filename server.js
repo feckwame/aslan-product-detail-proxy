@@ -7,7 +7,7 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3011');
   console.log('===',req.url);
   if (req.url === '/') {
-    res.redirect(301, `${req.url}?product-detail=P001`);
+    res.redirect(301, `${req.url}?productId=P001`);
   }
   next();
   // res.end()
