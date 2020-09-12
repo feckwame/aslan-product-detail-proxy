@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  proxy:
+    container_name: proxy
+    # image: feckwame/aslan-product-detail
+    restart: always
+    build: 
+      context: .
+      dockerfile: './Dockerfile'
+    ports:
+      - '3011:3011'
+    networks: 
+      - pr-network
+networks: 
+  pr-network:
+    external: true  
+
