@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <table>
+    <!-- <table>
       <tbody>
         <tr>
           <td>
@@ -15,16 +15,26 @@
               <div id="zoom-portal-root"></div>
             </div>  
           </td>
-          <td>
+          <td id="pr" style="height: 400px;">
             <div id="product_detail"></div>
           </td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
+    <div>
+      <span>
+        <div style="display: flex; position: relative">
+          <div id="Photos"></div>
+          <div id="zoom-portal-root">
+            <div id="product_detail"></div>
+          </div>
+        </div>
+      </span>
+    </div>
     <div id="reviews"></div>
     <div id=“portal-root”></div>
     <script type="module" src="http://ec2-13-57-207-233.us-west-1.compute.amazonaws.com:3004/photos.prod-bundle.js"></script>
-    <script type="module" src="http://3.218.98.72:3001/product-detail.prod-bundle.js"></script>
+    <script type="module" src="http://localhost:3001/product-detail.dev-bundle.js"></script>
     <script type="module" src="http://ec2-204-236-154-81.us-west-1.compute.amazonaws.com:3007/reviews.prod-bundle.js"></script>
   </body>
 </html>
